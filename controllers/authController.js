@@ -5,23 +5,19 @@ import JWT from "jsonwebtoken";
 export const registerController = async (req, res) => {
   try {
     const {
-      ApplicationType,
       name,
       nic,
+      passport,
       email,
       phone,
-      dob,
-      Gender,
       address,
-      Category,
-      Practice,
       password,
+      age,
+      gender,
+      dob,
     } = req.body;
 
     //VALIDATION
-    if (!ApplicationType) {
-      return res.send({ message: "Application Type is Required" });
-    }
     if (!name) {
       return res.send({ message: "Name is Required" });
     }
@@ -34,20 +30,8 @@ export const registerController = async (req, res) => {
     if (!phone) {
       return res.send({ message: "Phone Number is Required" });
     }
-    if (!dob) {
-      return res.send({ message: "Date of Birth is Required" });
-    }
-    if (!Gender) {
-      return res.send({ message: "Gender is Required" });
-    }
     if (!address) {
       return res.send({ message: "Address is Required" });
-    }
-    if (!Category) {
-      return res.send({ message: "Vehicle Category is Required" });
-    }
-    if (!Practice) {
-      return res.send({ message: "Practice Method is Required" });
     }
     if (!password) {
       return res.send({ message: "Password is Required" });
@@ -68,16 +52,15 @@ export const registerController = async (req, res) => {
     const hashedPassword = await hashPassword(password);
 
     const user = await new userModel({
-      ApplicationType,
       name,
       nic,
+      passport,
       email,
       phone,
+      age,
+      gender,
       dob,
-      Gender,
       address,
-      Category,
-      Practice,
       password: hashedPassword,
     }).save();
 
@@ -137,16 +120,15 @@ export const loginController = async (req, res) => {
       message: "login successfully",
       user: {
         _id: user._id,
-        ApplicationType: user.ApplicationType,
         name: user.name,
         nic: user.nic,
+        passport: user.passport,
         email: user.email,
-        phone: user.phone,
         dob: user.dob,
-        gender: user.Gender,
+        age: user.age,
+        gender: user.gender,
+        phone: user.phone,
         address: user.address,
-        Category: user.Category,
-        Practice: user.Practice,
         role: user.role,
       },
       token,
@@ -169,7 +151,7 @@ export const forgotPasswordController = async (req, res) => {
       res.status(400).send({ message: "Email is required" });
     }
     if (!nic) {
-      res.status(400).send({ message: "NIC or Passport ID is required" });
+      res.status(400).send({ message: "NIC is required" });
     }
     if (!newPassword) {
       res.status(400).send({ message: "New Password is required" });

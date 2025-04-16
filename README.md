@@ -56,13 +56,7 @@ Driving-School-Management-System/
 │   ├── appointmentController.js
 │   ├── attendenceController.js
 │   ├── authController.js
-│   ├── documentController.js
-│   ├── feedbackController.js
-│   ├── newappointmentController.js
-│   ├── paymentController.js
-│   ├── resultsController.js
-│   ├── submitController.js
-│   └── trainingController.js
+│   └── paymentController.js
 ├── helpers/
 │   └── authHelper.js
 ├── middlewares/
@@ -70,25 +64,14 @@ Driving-School-Management-System/
 ├── models/
 │   ├── classAttendModel.js
 │   ├── courseModel.js
-│   ├── documentModel.js
 │   ├── drivingTestModel.js
 │   ├── examAttendModel.js
-│   ├── feedbackModel.js
-│   ├── finalmarksModel.js
-│   ├── paymentModel.js
-│   ├── resultModel.js
-│   ├── submissionModel.js
-│   ├── testAttendModel.js
 │   └── userModel.js
 ├── routes/
 │   ├── authRoute.js
-│   ├── checkingRoute.js
 │   ├── datesRoute.js
 │   ├── documentRoutes.js
-│   ├── feedbackRoute.js
 │   ├── paymentRoute.js
-│   ├── resultsRoute.js
-│   ├── submissionRoute.js
 │   └── trainingRoute.js
 ├── .env
 ├── .gitignore

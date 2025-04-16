@@ -95,7 +95,7 @@ Driving-School-Management-System/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/AnuradhaDilshan/Driving-School-Management-System
+   git clone https://github.com/AnuradhaDilshan/Driving-School-Management-System.git
    cd Driving-School-Management-System
    ```
 

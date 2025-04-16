@@ -125,7 +125,7 @@ Driving-School-Management-System/
      REACT_APP_API = http://localhost:8080
      ```
 
-4. Running the Project
+4. Running the Project:
 
 - **Nodemon** is installed to automatically restart the backend server whenever file changes are detected. This removes the need to manually stop and restart the server after every update.
 

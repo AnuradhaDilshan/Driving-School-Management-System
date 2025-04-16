@@ -155,6 +155,6 @@ Driving-School-Management-System/
 This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![Last Commit](https://img.shields.io/github/last-commit/AnuradhaDilshan/Medium-To-React-App)
-![Repo Size](https://img.shields.io/github/repo-size/AnuradhaDilshan/Medium-To-React-App)
-![Top Language](https://img.shields.io/github/languages/top/AnuradhaDilshan/Medium-To-React-App)
+![Last Commit](https://img.shields.io/github/last-commit/AnuradhaDilshan/Driving-School-Management-System)
+![Repo Size](https://img.shields.io/github/repo-size/AnuradhaDilshan/Driving-School-Management-System)
+![Top Language](https://img.shields.io/github/languages/top/AnuradhaDilshan/Driving-School-Management-System)
